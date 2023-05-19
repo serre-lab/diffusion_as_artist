@@ -4,8 +4,11 @@ Link to the article : https://arxiv.org/abs/2301.11722
 
 ## 1. Quick Summary 
 <img align="left" src="image/Fig2.png" height="250">
-In our article entitled "Diffusion Models as Artist: Are we closing the Gap between Humans and Machines ?", we compare humans and machines on a one-shot image generation task. To do so, we use and extend the "diversity vs. recognizability" framework [1] (see https://arxiv.org/abs/2205.10370), to include 3 types of diffusion model : the DDPM [2], the CFGDM [3] and the FSDM [4]. We use the Omniglot and QuickDraw dataset to compare the models with those presented in [1]. We observe that diffusion models produce sample that are easily recognizable and diverse in the same time.
+In our article entitled "Diffusion Models as Artist: Are we closing the Gap between Humans and Machines ?", we compare humans and machines on a one-shot image generation task. To do so, we use and extend the "diversity vs. recognizability" framework [1] (see https://arxiv.org/abs/2205.10370), to include 3 types of diffusion model : the DDPM [2], the CFGDM [3] and the FSDM [4]. We use the Omniglot and QuickDraw dataset to compare the models with those presented in [1]. We observe that diffusion models produce sample that are easily recognizable and diverse in the same time (see figure on the Left).  
 
+<br/>
+
+To deepen our analysis we introduce the generalization curves: it describes the evolution of the sample's recognizability as a function of their originality.
 
 <img align="right" src="image/Fig3.png" height="250">
 

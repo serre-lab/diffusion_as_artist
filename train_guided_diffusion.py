@@ -64,7 +64,7 @@ if args.seed is not None:
     np.random.seed(args.seed)
     random.seed(args.seed)
 
-wb_name = args.mode_name
+wb_name = args.model_name
 if args.dataset == 'omniglot':
     wb_name += '_omniglot'
 elif args.dataset == 'quickdraw_clust':

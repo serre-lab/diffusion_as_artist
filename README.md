@@ -3,11 +3,8 @@
 Link to the article : https://arxiv.org/abs/2301.11722
 
 ## 1. Quick Summary 
-In our article entitled "Diffusion Models as Artist: Are we closing the Gap between Humans and Machines ?", we compare humans and machines on a one-shot image generation task. To do so, we use and extend the "diversity vs. recognizability" framework (see https://arxiv.org/abs/2205.10370), to include 3 types of diffusion model : the DDPM [1], the CFGDM [2] and the FSDM [3]. 
-<img align="right" src="image/Fig2.png" height="250">
-
-Diversity vs. Recognizability: Human-like generalization in one-shot generative models", we introduce a new framework to assess one-shot generative model. The evaluation framework is based on 1) the diversity of the generated samples and 2) their recognizability.The higher the diversity and the recognizability the better the generalization ability of the generative model.
-
+<img align="left" src="image/Fig2.png" height="250">
+In our article entitled "Diffusion Models as Artist: Are we closing the Gap between Humans and Machines ?", we compare humans and machines on a one-shot image generation task. To do so, we use and extend the "diversity vs. recognizability" framework [1] (see https://arxiv.org/abs/2205.10370), to include 3 types of diffusion model : the DDPM [2], the CFGDM [3] and the FSDM [4]. We use the Omniglot and QuickDraw dataset to compare the models with those presented in [1]. We observe that diffusion models produce sample that are easily recognizable and diverse in the same time.
 
 
 <img align="right" src="image/Fig3.png" height="250">
@@ -49,3 +46,4 @@ python train_guided_diffusion.py --model_name cfgdm --dataset_root YOUR_DATA_PAT
 [1] : 
 [2] :
 [3] :
+[4] :

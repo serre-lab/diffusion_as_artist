@@ -4,6 +4,14 @@ Link to the article : https://arxiv.org/abs/2301.11722
 
 ## 1. Quick Summary 
 
+<img align="right" src="image/Fig2.png" height="250">
+
+<img align="right" src="image/Fig3.png" height="250">
+
+<img align="right" src="image/Fig4.png" height="250">
+
+<img align="right" src="image/Fig5.png" height="250">
+
 ## 2. Train the one-shot diffusion models 
 For the VAE-STN, the DAGAN and the VAS-NS, please refer to the following github repository : https://github.com/serre-lab/diversity_vs_recognizability
 

@@ -1,25 +1,17 @@
 import torch
-import torch.nn.functional as F
-from diffusion_utils.diffusion_utils_2 import exists
-from utils.guidance_utils import ContextUnet_Omniglot, DDPM, Unet_V2_Omniglot
-from tqdm.auto import tqdm
+from utils.monitoring import str2bool, make_directories, make_grid, plot_img
+from data_utils.data_loader import load_dataset_exemplar
+from diffusion.model import Unet_V2_Omniglot
+from diffusion.ddpm import DDPM
 from torch.optim import Adam
 from torchvision import transforms
-import os
 from tqdm import tqdm
-from utils.monitoring import make_grid, plot_img
 import wandb
-from utils.data_loader import load_dataset_exemplar
 import argparse
-from utils.monitoring import str2bool
-import torch.nn as nn
-from diffusion_utils.embedding_model import MLP, AE, VQVAE, SimCLR, ConvNet, VQVAE_dico
-from utils.monitoring import make_directories
-#from diffusion_utils.diffusion_model import DiffusionModel
-#from diffusion_utils.diffusion_model import DiffusionModel
 import numpy as np
 import random
-from utils.custom_transform import Binarize_batch, Scale_0_1_batch
+from data_utils.custom_transform import Binarize_batch, Scale_0_1_batch
+
 
 scale_01, binarize = Scale_0_1_batch(), Binarize_batch(binary_threshold=0.5)
 
